@@ -1,3 +1,3 @@
 # Scenario,Expected AI Behavior
 
-![Controls Checklist Overview](../images/testingscenarios.png)
+![Controls Checklist Overview](../images/tstingscenarios.png)
