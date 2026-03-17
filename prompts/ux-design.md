@@ -11,7 +11,7 @@ When the user opens the app for the first time, the background is dimmed (70% op
 ## 2. The Main Dashboard (Post-Onboarding)
 Once the "First-Launch" ends, the interface should feel like a Table of Contents for their life.
 
-![Controls Checklist Overview](../images/SuccessEncouragement.png)
+![Controls Checklist Overview](../images/MainDashboard.png)
 
 ## 3. The "Foto-Resumen" (Document Results) Screen
 After the user takes a photo of a document, the screen changes to show Clarity.
