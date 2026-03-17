@@ -1,4 +1,4 @@
-# 📖 Proyecto: ClaroPaso (GitHub README)
+# 📖 Project: ClaroPaso (GitHub README)
 ## "En el papeleo no solo hay datos, hay destinos. Un formulario mal llenado es una cita perdida; una cita perdida es un sueño pausado."
 
 # 🎯 The Mission Statement
