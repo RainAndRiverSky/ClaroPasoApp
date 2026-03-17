@@ -43,3 +43,7 @@ Success Audio Scripts: A behavioral design that rewards every small win with ver
 /audio-assets: Scripts for the "Human Voice" and success triggers.
 
 /flows: Step-by-step guides for School, Health, and Legal tasks.
+
+# 💡Pro-Tip: How to use
+
+To test this in Google AI Studio, upload the system_instructions.md to the System Prompt area and set the Safety Settings to 'Medium' to ensure the AI remains helpful without being overly restrictive on immigration-related vocabulary.
