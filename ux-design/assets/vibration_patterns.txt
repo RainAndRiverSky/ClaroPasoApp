@@ -1,0 +1,24 @@
+2. vibration_patterns.txt
+Since your users might be in a loud room or have the volume down, they need to "feel" the app’s response. This file acts as a manual for the developer to program the phone's vibration motor.
+
+CLAROPASO HAPTIC FEEDBACK DOCUMENTATION
+
+1. SUCCESS_TAP (The "Checkmark" feeling)
+   Pattern: [50ms pulse, 30ms pause, 50ms pulse]
+   Usage: When a document is successfully saved or a task is finished.
+
+2. WARNING_TAP (The "Pay Attention" feeling)
+   Pattern: [200ms heavy pulse]
+   Usage: When a photo is too blurry or a deadline is within 24 hours.
+
+3. NAVIGATION_GUIDE (The "Arrow" feeling)
+   Pattern: [10ms micro-pulse]
+   Usage: Every time a user taps a "Bubble" or "Arrow" to confirm the action registered.
+
+4. EMERGENCY_ALERT (The "Stop" feeling)
+   Pattern: [500ms pulse, 100ms pause, 500ms pulse, 100ms pause]
+   Usage: Only for the 911/Emergency trigger.
+
+📂 Why these matter for your GitHub
+	•	For the Manager: It shows you’ve thought about accessibility. You aren't just building for people with perfect sight/hearing; you're building for everyone.
+	•	For the Developer: They don't have to guess. They can just copy the hex codes (#FFD700) and the vibration milliseconds (50ms) directly into the code.
