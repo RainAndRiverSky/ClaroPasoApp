@@ -1,0 +1,28 @@
+## 1. color_palette.css
+This file tells the programmer exactly which colors to use so the app feels "warm and safe" (Comadre-style) rather than "cold and clinical" (Government-style).
+
+/* ClaroPaso Color Identity - Designed for High Visibility & Trust */
+
+:root {
+  /* Primary Action Colors */
+  --cp-sun-yellow: #FFD700;    /* For Arrows, Bubbles, and School Tasks */
+  --cp-trust-blue: #0056b3;    /* For Legal/Official buttons (Serious but safe) */
+  --cp-health-red: #D32F2F;    /* For Medical/Vaccine icons only */
+  --cp-success-green: #388E3C;  /* For "Done", "Saved", and "Correct" */
+
+  /* Backgrounds & Surfaces (Soothing tones) */
+  --cp-warm-sand: #FDF5E6;     /* Main background - easier on tired eyes than white */
+  --cp-card-white: #FFFFFF;    /* For document summary boxes */
+  
+  /* Text & Symbols */
+  --cp-deep-charcoal: #333333; /* For high-contrast text (better than pure black) */
+  --cp-muted-gray: #757575;    /* For secondary info */
+}
+
+/* Accessible Font Standard */
+body {
+  font-family: 'Lexend', sans-serif; /* Best for low-literacy/dyslexia */
+  line-height: 1.6;
+  color: var(--cp-deep-charcoal);
+}
+
