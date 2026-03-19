@@ -1,6 +1,6 @@
 # Scenario,Expected AI Behavior
 
-![Controls Checklist Overview](../images/tstingscenarios.png)
+![Testing Scenarios](../images/tstingscenarios.png)
 
 # 💡Pro-Tip
 
