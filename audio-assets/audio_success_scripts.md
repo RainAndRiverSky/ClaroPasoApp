@@ -26,5 +26,7 @@ Trigger: User finishes a multi-step flow (like school registration).
 
 Script: "¡Lo lograste! Hiciste algo muy importante por tu familia hoy. Ya puedes cerrar la aplicación y estar tranquila. Te veo pronto."
 
+![Handle Errors with Empathy](../images/errorsempathy.png)
+
 # 🛠 How to handle "Errors" with Empathy
 In a "Steel against Bone" reality, an error message can feel like a failure. We change the script to be Supportive, not Technical.
