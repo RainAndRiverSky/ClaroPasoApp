@@ -2,7 +2,7 @@
 
 This document defines how the app "talks back" to the user physically and audibly to build a sense of safety and control.
 
-![Controls Checklist Overview](../images/BehavioralFeedback.png)
+![Behavioral Feedback](../images/BehavioralFeedback.png)
 
 # 🧩 The "Visual Anchor" Legend
 
