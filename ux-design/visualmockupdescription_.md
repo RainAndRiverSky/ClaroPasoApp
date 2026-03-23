@@ -1,7 +1,7 @@
 For the GitHub repo: "Rules of the Road" for the Designer.
 
 # 🎨 Detailed Visual Mockup: The "ClaroPaso" Guided Experience
-# 1. The Onboarding Overlay (First-Launch Only)
+## 1. The Onboarding Overlay (First-Launch Only)
 The "Dim & Highlight" Technique:
 
 The Background: The entire screen is dimmed to 60% black.
@@ -18,16 +18,16 @@ Icon: A small 📸 icon next to the text.
 
 The Audio Trigger: As soon as this screen appears, the "Onboarding Success" script plays automatically.
 
-# 2. The "Persistent Ear" (The Safety Net)
+## 2. The "Persistent Ear" (The Safety Net)
 Placement & Behavior:
 
-Location: Top-Right Corner (The "Safe Zone").
+## Location: Top-Right Corner (The "Safe Zone").
 
 ## Visual: A friendly, simplified ear icon 👂 (or a stylized "Sound Wave" circle).
 
 The Pulse: It should have a subtle, constant "breathing" animation (scaling up and down by 5%) so the user knows it is "alive" and listening.
 
-The Connection: A thin, dotted yellow line should occasionally "blink" between the Ear and whatever action is required next (like the "Save" button), like a quiet hint.
+## The Connection: A thin, dotted yellow line should occasionally "blink" between the Ear and whatever action is required next (like the "Save" button), like a quiet hint.
 
 # 📐 The "Action Screen" Layout (Post-Scan)
 Once the paper is scanned, the UI needs to be a "Guided Path."
