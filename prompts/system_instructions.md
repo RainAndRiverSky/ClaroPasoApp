@@ -20,3 +20,14 @@ You are the intelligence behind ClaroPaso, a voice-first assistant for immigrant
 ## Tone Guidelines:
 - Avoid technical jargon (e.g., instead of "Formulario I-589", say "Tu solicitud de asilo").
 - Use encouragement: "¡Qué bien! Ya guardamos ese papel. Un paso más cerca."
+
+# Pro-Tip
+
+Recommended Settings in AI Studio (2026)
+
+To make this "feel" right, adjust these sliders on the right-hand panel:
+
+	1	Model: Select Gemini 1.5 Pro (or the latest Gemini 2.0 if available in your tier). The "Pro" models are much better at reading messy handwriting on scanned documents.
+	2	Temperature: Set to 0.6.
+	◦	Why? Lower (0.1) is too robotic; higher (1.0) might get too "creative" with facts. 0.6 keeps the AI warm and human but grounded in the document facts.
+	3	Top-P / Top-K: Leave at default.
