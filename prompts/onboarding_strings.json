@@ -1,5 +1,3 @@
-This is the "Code Version" of the script so the AI knows what it said to the user.
-
 {
   "onboarding_v1": {
     "step": "Welcome",
