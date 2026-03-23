@@ -1,0 +1,20 @@
+{
+  "popup_id": "LEGAL_PROTECTION_I589",
+  "theme": "Deep_Trust_Blue",
+  "animation": "Fade_In_Slow",
+  "primary_icon": "legal_scales_white",
+  "haptic_feedback": "Long_Continuous_Pulse",
+  "auto_play_audio": true,
+  "buttons": [
+    {
+      "label": "Buscar Abogados Gratis",
+      "action": "open_referral_list",
+      "color": "Success_Green"
+    },
+    {
+      "label": "Guardar Foto Solamente",
+      "action": "save_to_legal_folder",
+      "color": "Ghost_White"
+    }
+  ]
+}
