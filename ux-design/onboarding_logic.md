@@ -1,8 +1,7 @@
 # 📂 For my GitHub Repo
 To make this "ClaroPaso Professional," you need to document the Logic of the welcome, not just the words. Add these files to your repository:
 
-## 1. onboarding_logic.md 
-This tells the developer exactly how the "First Run" should behave.
+This File tells the developer exactly how the "First Run" should behave.
 
 # First-Run Experience (Onboarding)
 
