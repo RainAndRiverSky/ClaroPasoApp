@@ -1,0 +1,18 @@
+# 2. onboarding_strings.json
+
+"Code Version" of the script so the AI knows what it said to the user.
+
+{
+  "onboarding_v1": {
+    "step": "Welcome",
+    "text_display": "¡Hola! Soy tu guía.",
+    "audio_file": "welcome_01.mp3",
+    "visual_cue": "None"
+  },
+  "onboarding_v2": {
+    "step": "The Ear",
+    "text_display": "Toca aquí si necesitas ayuda.",
+    "audio_file": "welcome_02.mp3",
+    "visual_cue": "Pulsing Ear Icon"
+  }
+}
