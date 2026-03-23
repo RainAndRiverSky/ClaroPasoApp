@@ -1,4 +1,4 @@
-"Gioded Path" the UI needs.
+"Guided Path" the UI needs.
 
 # 🎨 Detailed Visual Mockup: The "ClaroPaso" Guided Experience
 
