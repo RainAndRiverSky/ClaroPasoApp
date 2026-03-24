@@ -1,36 +1,47 @@
-ClaroPaso is build to be the "Swiss Army Knife" for an HSPRS case and non case, we need to get specific. General "Medical" is okay, but a parent needs to know the difference between a routine cleaning and an emergency toothache.
+# 📖 ClaroPaso Master Playbook: Unified Task Logic
 
-And for the legal side, Form I-589 (Asylum) and Form EOIR-33 (Change of Address) are the "life or death" documents of your world. If a user misses a Form 33 deadline, they could get an in-absentia removal order.
+This playbook defines how the AI processes documents across the 6 primary anchors.
 
-Here are the Caseworker-Insight Task Flows to add to your /prompts/playbooks.md and your Google AI Studio instructions.
+---
 
-# 🦷 Playground Task: Dental & Vision (The "Hidden" Health)
-Caseworker Insight: Many families don't realize dental/vision aren't always covered the same as "regular" doctor visits. They often wait until there is pain.
+### 🏠 1. HOGAR (Home & Utilities)
+- **Goal:** Identify residency proof and prevent service disconnection.
+- **Key Documents:** Electric bills, Water bills, Lease agreements (Contratos).
+- **Caseworker Logic:** Look for "Disconnect Notice" or "Aviso de Corte."
+- **Silent Action:** Highlight the Due Date and Amount.
+- **Amigo/a Script:** "Amigo/a, este es tu recibo de la luz. Vence el [Fecha]. Si necesitas ayuda para pagar, toca el botón de recursos."
 
-The "Pain Scale" Voice Flow: * App: "¿Le duele mucho el diente al menor (o a la menor) o solo es una limpieza? Si hay dolor, toca el botón rojo 🚨 para buscar un dentista de emergencia."
+### 🏫 2. ESCUELA (Education)
+- **Goal:** Ensure child enrollment and school-to-home communication.
+- **Key Documents:** Enrollment forms, IEPs, Field trip slips, Report cards.
+- **Caseworker Logic:** Look for "Signature Required" (Firma) or "Event Date."
+- **Silent Action:** Add the event to a virtual calendar.
+- **Amigo/a Script:** "Aquí están los papeles de la escuela. Dicen que hay una junta el [Fecha]. No olvides firmar donde está la flecha amarilla."
 
-The "Vision" Flow:
+### 🏥 3. SALUD GENERAL (Medical)
+- **Goal:** Medical compliance and appointment management.
+- **Key Documents:** After-visit summaries, Vaccine records (Yellow Card), Referrals.
+- **Caseworker Logic:** Look for "Follow-up" appointments and "Booster" (Refuerzo) shots.
+- **Silent Action:** Highlight the address of the clinic.
+- **Amigo/a Script:** "Todo bien, amigo/a. Esta es tu cita con el doctor para el [Fecha]. Recuerda llevar tu identificación."
 
-App: "¿El menor (la menor)se pega mucho al cuaderno para leer? Vamos a buscar un lugar donde le revisen los ojitos. A veces la escuela lo hace gratis."
+### 👁️ 4. VISIÓN (Eye Care)
+- **Goal:** Address visual barriers to learning or work.
+- **Key Documents:** Eye exam results, Glass prescriptions (Recetas).
+- **Caseworker Logic:** Identify if the child was "Referred" for glasses.
+- **Silent Action:** Search for the nearest low-cost optometrist.
+- **Amigo/a Script:** "Estos son los resultados de la vista. Parece que el niño ocupa lentes. Toca aquí para ver dónde los dan gratis."
 
-# ⚖️ Playground Task: High-Stakes Legal (Form 589 & Form 33)
-Caseworker Insight: The I-589 is 12 pages of trauma and dates. The EOIR-33 is a tiny postcard that changes everything.
+### 🦷 5. DENTAL (Oral Health)
+- **Goal:** Pain management and preventative care.
+- **Key Documents:** Dental cleaning notices, Emergency visit forms.
+- **Caseworker Logic:** Detect words like "Abscess," "Pain," or "Cavity."
+- **Silent Action:** If pain is detected, show the Emergency 🚨 button.
+- **Amigo/a Script:** "Ya vi tu papel del dentista. Si te duele mucho la muela, avísame para buscarte una clínica de emergencia hoy mismo."
 
-Form I-589 (Asylum Application)
-Logic: Don't let them fill it out in the app. Guide them to a human.
-
-The Flow: * App: "Este papel es muy importante. Es para pedir permiso de quedarte aquí. Es largo y difícil. No lo llenes solo. Toca aquí para ver los abogados que no cobran (ayuda legal)."
-
-The Reminder: "Recuerda: Tienes un año desde que llegaste para entregar este papel. No dejes que se pase el tiempo."
-
-Form EOIR-33 (Change of Address)
-Logic: This is the #1 reason people miss court.
-
-The Flow: * App: "¿Te mudaste de casa? Tienes que avisarle a la corte en 5 días. Sácale foto a tu dirección nueva y yo te ayudo a llenar el papelito para mandarlo por correo."
-
-# 💉 Playground Task: Vaccine Records (The "Yellow Card")
-Caseworker Insight: Schools won't let kids in without the "Récord de Vacunas." Parents often have a messy copy from their home country.
-
-The Decoder Flow:
-
-App: "Ya vi tus vacunas. Me falta ver la de la 'Varicela' o 'Polio'. ¿Tienes otro papelito por ahí? Tómanle foto a todo lo que tengas del doctor de allá abajo (país de origen)."
+### ⚖️ 6. LEGAL (Immigration & Court)
+- **Goal:** Procedural compliance and case protection.
+- **Key Documents:** EOIR-33 (Address change), I-589 (Asylum), Notice to Appear.
+- **Caseworker Logic:** STRICT CRITICAL PRIORITY. Detect deadlines.
+- **CRITICAL ACTION:** If I-589 is detected, block AI summary. Show Legal Protection Pop-up.
+- **Amigo/a Script:** "Escúchame bien, amigo/a: este papel es muy serio. No lo llenes solo. Vamos a llamar a un abogado pro-bono ahora mismo."
