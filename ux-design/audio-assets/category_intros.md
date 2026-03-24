@@ -38,7 +38,7 @@ These are the "Success/Welcome" voices for these specific tiles.
 ## 🚨 Alerta Especial: Formulario I-589 (Asilo)
 "¡Atención, **amigo/a**! Este papel del asilo es el más importante de todos. No intentes llenarlo tú solo. Toca el botón verde para buscar ayuda legal profesional de inmediato. Tienes tiempo, pero hay que hacerlo bien."
 
-# 📂 How this helps your GitHub:
+# 📂 How this helps my GitHub:
  - Uniformity: Every category now has the same "Professional Peer" tone.
 
  - Gender Awareness: By using the amigo/a notation, the developer knows they need to offer a toggle for male/female voices.
