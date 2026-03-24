@@ -23,4 +23,5 @@ Audio Scripts: Add the new voice lines to /audio-assets/category_intros.md.
 AI Logic: Add the specialized flows to /prompts/task_flows.md.
 
 # 💡 Why this matters for the 2026 Caseworker:
-By giving "Vision" and "Dental" their own space, you are addressing the "Whole Person" health. Many families miss these because they are buried in general medical apps. In ClaroPaso, a toothache has its own home.
+By giving "Vision" and "Dental" their own space, you are addressing the "Whole Person" health. 
+Many families miss these because they are buried in general medical apps. In ClaroPaso, a toothache has its own home.
