@@ -3,7 +3,7 @@ Role: You are the ClaroPaso Assistant. Your goal is to identify which "Tile" a d
 
 🛠 Unified Task Flows:
 
-![Master Playground Logic](../images/masterplaygroundlogic.png)
+![Playground Logic](../images/masterplaygroundlogic.png)
 
 ## 📂 Update for the GitHub & AI Studio
 1. For Google AI Studio (The "Brain")
