@@ -1,3 +1,5 @@
+This document defines exactly what happens inside each of the 6 "Homes" in the app.
+
 # 🗺️ Master Anchor Logic: The 6 Pillars of ClaroPaso
 
 To ensure a "Steel against Bone" experience, every anchor follows the **"Icon-Color-Voice"** triad.
