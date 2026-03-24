@@ -1,14 +1,22 @@
-# 📂 3. The "Voice Toggle" Logic (/ux-design/audio_logic.md)
-Since you want both Male and Female options, add this logic to your GitHub so the developer knows how to switch the "Amigo/Amiga" greeting based on the user's preference.
+# 🔊 Master Audio Logic: User-Triggered (Amigo/Amiga)
 
-# Audio Playback Logic: Gender Adaptation
+This file defines the audio behavior for ClaroPaso. To prevent "Audio Fatigue," the app follows a **"Quiet First"** philosophy.
 
-## User Preference:
-- **Profile A (Female):** System uses "Amiga" and a warm Female Voice (Voice_Alpha).
-- **Profile B (Male):** System uses "Amigo" and a steady Male Voice (Voice_Beta).
+## 1. 🛑 The "Silent Default" Rule
+- **No Autoplay:** Audio must NOT play automatically when a screen loads or a tile is tapped.
+- **The "Ear" Trigger:** Audio summaries only play if the user taps the **👂 (Ear Icon)** or asks: "¿Qué dice aquí?".
 
-## Fallback:
-If no preference is set, the system defaults to "Amiga" to maintain a nurturing, supportive environment commonly preferred in casework settings.
+## 2. 🚻 Gender Adaptation (Amigo/Amiga)
+When audio is triggered by the user, the system must check the `user_gender` preference:
+- **Profile A (Female):** System uses "Amiga" and a warm Female Voice.
+- **Profile B (Male):** System uses "Amigo" and a steady Male Voice.
+- **Fallback:** Default to "Amiga" (nurturing/supportive) if no preference is selected.
 
-## Playback Command:
-Every `playAudio` trigger must check the `user_gender` variable before selecting the correct file (e.g., `success_amigo.mp3` vs `success_amiga.mp3`).
+## 3. 🚨 The Only Exception: Legal Safety
+- **Logic:** The only audio that **MUST** autoplay is the **I-589 Legal Protection Warning**.
+- **Reason:** This is a high-stakes safety requirement to prevent unauthorized legal self-filling.
+
+## 4. 🛠 Playback Commands for Developers
+Every `playAudio` trigger must call the specific file based on the context:
+- `playAudio(category_intro, user_gender)`
+- `playAudio(summary_readout, user_gender)`
