@@ -1,8 +1,8 @@
-# 📖 Project: ClaroPaso (GitHub README)
-## "En el papeleo no solo hay datos, hay destinos. Un formulario mal llenado es una cita perdida; una cita perdida es un sueño pausado."
+# 📖 Project: ClaroPaso
+"En el papeleo no solo hay datos, hay destinos. Un formulario mal llenado es una cita perdida; una cita perdida es un sueño pausado."
 
-# 🎯 The Mission Statement
-## As an HSPRS (Home Study Post Release Service) Caseworker, I have seen the "American Dream" get stalled by a single sheet of paper.
+## 🎯 The Mission Statement
+As an HSPRS (Home Study Post Release Service) Caseworker, I have seen the "American Dream" get stalled by a single sheet of paper.
 
 Traditional apps are built for people with high digital literacy, stable internet, and "Textbook Spanish." They ignore the parent who is working two jobs, the caregiver who never had the chance to learn to read or write, and the family living in the "chaos of the transition."
 
