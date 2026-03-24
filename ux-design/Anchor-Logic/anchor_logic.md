@@ -1,23 +1,33 @@
-# 📂 Anchor Logic for the GitHub Repo 
-To make this work for non-readers, the developer needs to follow these three rules:
+# 🗺️ Master Anchor Logic: The 6 Pillars of ClaroPaso
 
-## 1. The "Big Label" Rule
- - For Readers: The word (e.g., DENTAL) is in bold, all-caps, at the top of the tile.
+To ensure a "Steel against Bone" experience, every anchor follows the **"Icon-Color-Voice"** triad.
 
- - For Non-Readers: The icon (🦷) takes up 60% of the tile space.
+### 🏠 HOGAR / UTILIDADES
+- **Visual:** Orange (#F57C00) | Icon: 🏠
+- **Goal:** Financial stability and residency proof.
+- **Logic:** Prioritize "Expiration Dates" and "Total Due." If "Disconnect" is detected, trigger the Red Alert 🚨.
 
-## 2. The "Voice Anchor" Rule
-When the user taps a tile, the app speaks the name and the goal immediately:
+### 🏫 ESCUELA
+- **Visual:** Yellow (#FFD700) | Icon: 🏫
+- **Goal:** Children's integration and compliance.
+- **Logic:** Extract "Date/Time" for meetings and "Required Signatures." Differentiate between "Info" and "Action."
 
- - User taps Legal: "Legal. Aquí guardamos tus papeles de la corte y migración."
+### 🏥 SALUD GENERAL
+- **Visual:** Green (#2E7D32) | Icon: 🏥
+- **Goal:** Physical wellbeing and vaccine compliance.
+- **Logic:** Focus on "Clinic Location" and "Appointment Time." Highlight the word "Refuerzo" (Booster) for vaccines.
 
- - User taps Hogar: "Hogar. Aquí están tus recibos de luz y el contrato de la casa."
+### 👁️ VISIÓN
+- **Visual:** Cobalt (#1565C0) | Icon: 👁️
+- **Goal:** Educational success through clear sight.
+- **Logic:** Identify "Prescription" (Receta) vs. "Referral." If a referral is found, suggest a free vision screening.
 
-## 3. The "Human Link" Trigger
-Every category has a "Life-Line" button at the bottom.
+### 🦷 DENTAL
+- **Visual:** Light Blue (#E3F2FD) | Icon: 🦷
+- **Goal:** Pain management and oral hygiene.
+- **Logic:** Search for the word "Dolor" or "Emergencia." If found, provide the nearest 24/7 dental clinic info.
 
- - Visual: A small person icon 👤.
-
- - Action: This button directs the user to a real human (Caseworker, Pro-bono lawyer, or Clinic receptionist).
-
- - Voice: "¿Quieres hablar con una persona sobre esto? Toca el botón azul."
+### ⚖️ LEGAL
+- **Visual:** Deep Navy (#1A237E) | Icon: ⚖️
+- **Goal:** Case protection and legal compliance.
+- **Logic:** STOP ALL SUMMARIES if Form I-589 is detected. Provide "Pro-Bono" list immediately. Never offer legal opinions.
