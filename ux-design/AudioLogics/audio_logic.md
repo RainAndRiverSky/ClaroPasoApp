@@ -20,3 +20,11 @@ When audio is triggered by the user, the system must check the `user_gender` pre
 Every `playAudio` trigger must call the specific file based on the context:
 - `playAudio(category_intro, user_gender)`
 - `playAudio(summary_readout, user_gender)`
+
+## 5. 🗺️ Anchor-Specific Audio Tones
+When audio is triggered via the "Ear" icon, the system must use the following tonal profiles:
+- **Hogar/Escuela:** Supportive, Encouraging (Honey).
+- **Salud/Visión/Dental:** Calm, Instructive, Steady.
+- **Legal:** Serious, Protective (Steel), Lower Pitch.
+
+**Logic Note:** If the document is categorized as 'Legal' but NOT 'I-589', the user must still tap the 'Ear' to hear the summary. Only the 'I-589' bypasses this rule.
