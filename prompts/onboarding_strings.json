@@ -1,14 +1,26 @@
 {
   "onboarding_v1": {
     "step": "Welcome",
-    "text_display": "¡Hola! Soy tu guía.",
-    "audio_file": "welcome_01.mp3",
-    "visual_cue": "None"
+    "text_display": "¡Hola! Soy tu guía, tu amigo/a en ClaroPaso.",
+    "audio_file": "welcome_amigo_amiga.mp3",
+    "visual_cue": "Pulse App Logo"
   },
   "onboarding_v2": {
-    "step": "The Ear",
-    "text_display": "Toca aquí si necesitas ayuda.",
-    "audio_file": "welcome_02.mp3",
+    "step": "The 6 Anchors",
+    "text_display": "Aquí guardamos todo: Escuela, Hogar, Salud, Visión, Dental y Legal.",
+    "audio_file": "intro_anchors.mp3",
+    "visual_cue": "Glow all 6 Dashboard Tiles"
+  },
+  "onboarding_v3": {
+    "step": "The Ear Icon",
+    "text_display": "Si no quieres leer, toca 'La Oreja' y yo te lo platico.",
+    "audio_file": "explain_ear_icon.mp3",
     "visual_cue": "Pulsing Ear Icon"
+  },
+  "onboarding_v4": {
+    "step": "Privacy & Safety",
+    "text_display": "Tus papeles están seguros conmigo. ¿Empezamos, amigo/a?",
+    "audio_file": "safety_start.mp3",
+    "visual_cue": "Checkmark Animation"
   }
 }
