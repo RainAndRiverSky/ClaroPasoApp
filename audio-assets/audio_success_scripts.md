@@ -1,32 +1,37 @@
-# 🎙️ Audio Success Scripts
-These are designed to be recorded in a warm, natural, female or male voice—think of a kind relative or a trusted community leader. No robotic tones allowed.
+# 🔊 Audio Success Scripts (v2.0)
+**Tone:** Supportive Peer (Amigo/Amiga). Focus on efficiency and family progress. Avoid therapeutic or grounding language.
 
-## 1. The "First Win" (Onboarding Success)
-Trigger: User completes the tutorial or first scan.
+## ## 1. The "First Win" (Onboarding Success)
+**Trigger:** User completes the tutorial or first scan.
+**Script:** "¡Eso! Ya aprendiste lo más importante. No tengas miedo de oprimir los botones, **amigo/a**, aquí estoy para guiarte. ¿Qué sigue hoy?"
 
-Script: "¡Eso! Ya aprendiste lo más importante. No tengas miedo de oprimir los botones, aquí estoy para guiarte. ¿Qué sigue hoy?"
+## ## 2. The "Paper Captured" (Scan Success)
+**Trigger:** Camera successfully focuses and saves a document.
+**Script:** "¡Listo! Ya le tomé la foto y se ve muy clarita. Ya la guardé en tu carpeta segura para que no se te pierda entre tanto papel. Buen trabajo."
 
-## 2. The "Paper Captured" (Scan Success)
-Trigger: Camera successfully focuses and saves a document.
+## ## 3. The "Anchor Win" (Category Specific)
+**Trigger:** After a document is successfully filed into a tile.
 
-Script: "¡Listo! Ya le tomé la foto y se ve muy clarita. Ya la guardé en tu carpeta segura para que no se te pierda entre tanto papel. Buen trabajo."
+| Anchor | Script |
+| :--- | :--- |
+| **🏠 Hogar** | "Ya quedó guardado el recibo. Un pendiente menos para la casa, **amigo/a**. Todo va en orden." |
+| **🏫 Escuela** | "¡Qué bien! Ya anoté lo de la escuela. Tus hijos van por buen camino, sigue así." |
+| **⚖️ Legal** | "He guardado este papel con mucha seguridad. Hiciste lo correcto, **amigo/a**. Estamos un paso más cerca." |
 
-## 3. The "Panic Defused" (Summary Success)
-Trigger: After the AI explains a scary English document in plain Spanish.
+## ## 4. The "Panic Defused" (Summary Success)
+**Trigger:** After the AI explains a complex English document.
+**Script:** "Ya ves, no era tan complicado como parecía. Ya tenemos el plan listo. Un paso a la vez, **amigo/a**."
 
-Script: "Ya ves, no era tan complicado como parecía. Solo es un aviso de la escuela. Respira profundo, que ya tenemos el plan listo. Un paso a la vez."
+## ## 5. The "Big Milestone" (Task Completion)
+**Trigger:** User finishes a multi-step flow (like school registration).
+**Script:** "¡Lo lograste! Hiciste algo muy importante por tu familia hoy. Ya puedes cerrar la aplicación. Te veo pronto."
 
-## 4. The "Deadline Set" (Reminder Success)
-Trigger: User confirms a court date or medical appointment.
+# 🧠 Update for Google AI Studio (System Instructions)
+Add this specific "Success Logic" to your System Instructions in AI Studio to keep the "Brain" from getting too chatty or "therapeutic."
 
-Script: "Perfecto, ya anoté la cita. Yo te voy a avisar con tiempo para que no andes a las carreras. Tú descansa, que yo me encargo de recordarte."
+### SUCCESS SCRIPT RULES (ANTI-DILUTION)
 
-## 5. The "Big Milestone" (Task Completion)
-Trigger: User finishes a multi-step flow (like school registration).
-
-Script: "¡Lo lograste! Hiciste algo muy importante por tu familia hoy. Ya puedes cerrar la aplicación y estar tranquila. Te veo pronto."
-
-![Handle Errors with Empathy](../images/errorsempathy.png)
-
-# 🛠 How to handle "Errors" with Empathy
-In a "Steel against Bone" reality, an error message can feel like a failure. We change the script to be Supportive, not Technical.
+- **Tone Override:** Never use anxiety-calming or grounding language (e.g., 'Take a deep breath'). 
+- **Voice:** Use 'Amigo/Amiga' to celebrate wins.
+- **Goal:** Focus on the practical value of the task completed (e.g., 'One less thing to worry about for the house').
+- **Anchor Context:** Tailor the success message to the tile (Escuela, Hogar, Salud, Visión, Dental, Legal).
