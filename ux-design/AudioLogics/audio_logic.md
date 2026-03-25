@@ -27,4 +27,9 @@ When audio is triggered via the "Ear" icon, the system must use the following to
 - **Salud/Visión/Dental:** Calm, Instructive, Steady.
 - **Legal:** Serious, Protective (Steel), Lower Pitch.
 
+## 6. Front-End Sanitization
+- **Logic:** The AI must only output the "text" value to the user interface.
+- **Rule:** If the AI accidentally generates a JSON object, the system should strip the brackets and only display the string content.
+- **Goal:** Maintain the "Human-First" illusion for low-literacy users.
+
 **Logic Note:** If the document is categorized as 'Legal' but NOT 'I-589', the user must still tap the 'Ear' to hear the summary. Only the 'I-589' bypasses this rule.
