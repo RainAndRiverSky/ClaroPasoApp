@@ -21,3 +21,15 @@ If they tap the pulsing icon, the AI provides category-specific guidance:
 - **Icon:** A small, friendly ear icon stays in the corner.
 - **Pulse:** A soft "Breathe" animation (opacity 0.5 to 1.0) starts after the idle timer hits 10s.
 - **Haptic:** A "Tiny Tap" vibration occurs when the icon begins to pulse.
+
+🧠 Update for Google AI Studio (System Instructions)
+Add this specific "Interaction Logic" block to your System Instructions. This tells the AI how to behave when the user triggers that Ear Icon manually.
+
+### UI-UX INTERACTION LOGIC: THE EAR ICON
+
+- **IDLE SUPPORT:** If the user seems stuck (manual trigger or idle signal), provide a 'Category Check-in.'
+- **MANDATORY TONE:** Use the 'Amigo/Amiga' greeting.
+- **SCRIPT RULES:**
+    - State exactly which section they are in (Hogar, Escuela, etc.).
+    - Ask a helpful follow-up question (e.g., 'Do you want me to read the due date?').
+    - Keep it under 20 words to avoid audio fatigue.
