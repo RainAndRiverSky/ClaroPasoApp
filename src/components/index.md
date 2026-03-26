@@ -16,4 +16,5 @@
         <button class="icon-btn" id="mic-btn" title="Dictar voz">🎙️</button>
     </div>
 </footer>
+<script src="script.js"></script>
 </div>
