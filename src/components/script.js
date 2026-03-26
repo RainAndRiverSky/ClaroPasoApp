@@ -1,10 +1,33 @@
-// Este código cambia el título automáticamente según la carpeta
-const urlParams = new URLSearchParams(window.location.search);
-const pilar = urlParams.get('pilar') || 'General';
+// --- LÓGICA DE NAVEGACIÓN Y TÍTULOS ---
+document.addEventListener("DOMContentLoaded", () => {
+    const params = new URLSearchParams(window.location.search);
+    
+    // Usamos 'type' como prioridad, pero mantenemos 'pilar' por si acaso
+    const pageType = params.get('type') || params.get('pilar');
 
-document.getElementById('pilar-title').innerText = pilar.charAt(0).toUpperCase() + pilar.slice(1);
+    const titles = {
+        'memorias': 'Archivo de Memorias',
+        'galaxia': 'Exploración Galáctica',
+        'ritmos': 'Sintonía de Nyx',
+        'visiones': 'Cámara de Visiones',
+        'esencia': 'Núcleo de Esencia',
+        'noche': 'Manto de la Noche',
+        'general': 'Nyx'
+    };
 
-// Función para activar el micrófono
+    const titleElement = document.getElementById('nyx-title') || document.getElementById('pilar-title');
+    
+    if (pageType && titles[pageType.toLowerCase()]) {
+        const fullTitle = titles[pageType.toLowerCase()];
+        if (titleElement) titleElement.innerText = fullTitle;
+        document.title = `Nyx | ${fullTitle}`;
+    } else if (titleElement) {
+        // Si no hay parámetro, ponemos un nombre por defecto
+        titleElement.innerText = "Nyx";
+    }
+});
+
+// --- LÓGICA DE VOZ (MICROFONO) ---
 function startDictation() {
     if ('webkitSpeechRecognition' in window) {
         const recognition = new webkitSpeechRecognition();
@@ -13,13 +36,20 @@ function startDictation() {
 
         recognition.onresult = function(event) {
             const text = event.results[0][0].transcript;
-            document.getElementById('chat-input').value = text;
-            // Aquí se enviaría el texto a Nyx automáticamente
+            const inputField = document.getElementById('chat-input');
+            if (inputField) {
+                inputField.value = text;
+                // Opcional: enviar automáticamente si tienes una función de envío
+                // sendMessage(); 
+            }
         };
     } else {
         alert("Tu navegador no soporta dictado por voz. Intenta usar Chrome.");
     }
 }
 
-// Conectar el botón con la función
-document.getElementById('mic-btn').addEventListener('click', startDictation);
+// Conectar el botón (asegúrate de que este ID existe en tu HTML)
+const micBtn = document.getElementById('mic-btn');
+if (micBtn) {
+    micBtn.addEventListener('click', startDictation);
+}
