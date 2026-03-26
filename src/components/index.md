@@ -8,12 +8,6 @@
         </div>
 
     <footer class="interaction-bar">
-        <div class="input-container">
-            <button class="btn-icon">📸</button>
-            <input type="text" placeholder="Dime algo a Nyx..." id="user-input">
-            <button class="btn-icon" onclick="startDictation()">🎙️</button>
-        </div>
-    </footer>
 
 <footer class="nyx-input-bar">
     <div class="input-wrapper">
