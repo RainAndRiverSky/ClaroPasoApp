@@ -7,15 +7,13 @@
     <div class="chat-area" id="chat-nyx">
         </div>
 
-<footer class="interaction-bar">
-    <div class="input-container">
-        <button class="btn-icon" title="Subir foto">📷</button>
-        <input type="text" placeholder="Dime algo a Nyx o sube un papel..." id="user-input">
-        <button class="btn-icon" title="Dictar por voz">🎙️</button>
-    </div>
-    
-    <button class="btn-menu-exit" style="display:none;">Menú</button>
-</footer>
+    <footer class="interaction-bar">
+        <div class="input-container">
+            <button class="btn-icon">📸</button>
+            <input type="text" placeholder="Dime algo a Nyx..." id="user-input">
+            <button class="btn-icon" onclick="startDictation()">🎙️</button>
+        </div>
+    </footer>
 
 <footer class="nyx-input-bar">
     <div class="input-wrapper">
@@ -24,3 +22,4 @@
         <button class="icon-btn" id="mic-btn" title="Dictar voz">🎙️</button>
     </div>
 </footer>
+</div>
