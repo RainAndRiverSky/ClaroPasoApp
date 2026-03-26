@@ -1,3 +1,9 @@
+// Este código cambia el título automáticamente según la carpeta
+const urlParams = new URLSearchParams(window.location.search);
+const pilar = urlParams.get('pilar') || 'General';
+
+document.getElementById('pilar-title').innerText = pilar.charAt(0).toUpperCase() + pilar.slice(1);
+
 // Función para activar el micrófono
 function startDictation() {
     if ('webkitSpeechRecognition' in window) {
