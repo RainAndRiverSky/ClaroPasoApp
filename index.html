@@ -19,7 +19,10 @@
 
     <footer class="nyx-input-bar">
         <div class="input-wrapper">
-            <button class="icon-btn" title="Subir documento">📷</button>
+            <button class="icon-btn" id="camera-btn" title="Subir documento">📷</button>
+            
+            <input type="file" id="file-input" accept="image/*" style="display: none;">
+            
             <input type="text" id="chat-input" placeholder="Pregúntale algo a Nyx...">
             <button class="icon-btn" id="mic-btn" title="Dictar voz">🎙️</button>
         </div>
