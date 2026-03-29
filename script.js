@@ -91,3 +91,24 @@ function appendMessage(sender, text) {
     // Auto-scroll hacia abajo para ver el último mensaje
     chatArea.scrollTop = chatArea.scrollHeight;
 }
+
+// --- LÓGICA DE LA CÁMARA ---
+const cameraBtn = document.getElementById('camera-btn');
+const fileInput = document.getElementById('file-input');
+
+if (cameraBtn && fileInput) {
+    cameraBtn.addEventListener('click', () => {
+        fileInput.click(); // Abre el selector de archivos
+    });
+
+    fileInput.addEventListener('change', (event) => {
+        const file = event.target.files[0];
+        if (file) {
+            appendMessage("Usuario", `📎 Imagen seleccionada: ${file.name}`);
+            // Aquí es donde Nyx analizará la imagen más adelante
+            setTimeout(() => {
+                appendMessage("Nyx", "Veo que has subido una imagen. ¿Quieres que la analice?");
+            }, 800);
+        }
+    });
+}
