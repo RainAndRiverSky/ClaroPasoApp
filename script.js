@@ -53,3 +53,41 @@ const micBtn = document.getElementById('mic-btn');
 if (micBtn) {
     micBtn.addEventListener('click', startDictation);
 }
+
+// --- LÓGICA DEL CHAT (ENTER KEY) ---
+const inputField = document.getElementById("chat-input");
+const chatArea = document.getElementById("chat-nyx");
+
+if (inputField) {
+    inputField.addEventListener("keydown", async (event) => {
+        // Solo actúa si presionas Enter y el cuadro no está vacío
+        if (event.key === "Enter" && inputField.value.trim() !== "") {
+            const userMessage = inputField.value;
+            
+            // 1. Limpiar el cuadro de texto
+            inputField.value = "";
+
+            // 2. Mostrar tu mensaje en la pantalla
+            appendMessage("Usuario", userMessage);
+
+            // 3. Respuesta temporal de Nyx (Simulación)
+            setTimeout(() => {
+                appendMessage("Nyx", "¡Recibido! Estoy conectando mi cerebro a la base de datos...");
+            }, 600);
+        }
+    });
+}
+
+function appendMessage(sender, text) {
+    if (!chatArea) return;
+    
+    const msgDiv = document.createElement("div");
+    // Esto usa las clases que deberías tener en tu style.css
+    msgDiv.className = sender === "Nyx" ? "message-nyx" : "message-user";
+    msgDiv.innerHTML = `<strong>${sender}:</strong> ${text}`;
+    
+    chatArea.appendChild(msgDiv);
+    
+    // Auto-scroll hacia abajo para ver el último mensaje
+    chatArea.scrollTop = chatArea.scrollHeight;
+}
